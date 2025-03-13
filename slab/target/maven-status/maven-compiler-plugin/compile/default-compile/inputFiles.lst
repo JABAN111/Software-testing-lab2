@@ -1,5 +1,13 @@
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/FuncInterface.java
 /Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/Main.java
-/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/func/FuncInterface.java
 /Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/func/LogarithmFunc.java
 /Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/func/MainFunction.java
 /Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/func/TrigonometryFunc.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/logarithm/Ln.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/logarithm/Log.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Cos.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Cot.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Csc.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Sec.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Sin.java
+/Users/jaba/Documents/life/ITMO/tpo/slab/slab/src/main/java/lab/tpo/trigonometry/Tan.java

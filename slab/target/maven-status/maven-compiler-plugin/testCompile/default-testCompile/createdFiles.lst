@@ -1,1 +1,9 @@
+integration/func/TrigonometryFuncTest.class
+integration/logarithm/LogIntegrationTest.class
 integration/func/MainFuncTest.class
+unit/logarithm/LogTest.class
+integration/func/LogarithmFuncTest.class
+integration/trigonometry/CosIntegrationTest.class
+integration/trigonometry/CotTest.class
+unit/trigonometry/SinTest.class
+unit/logarithm/LnTest.class

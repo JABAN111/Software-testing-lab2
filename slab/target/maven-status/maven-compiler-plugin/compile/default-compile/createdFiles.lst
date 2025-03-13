@@ -1,5 +1,13 @@
-lab/tpo/Main.class
+lab/tpo/trigonometry/Sec.class
+lab/tpo/trigonometry/Sin.class
+lab/tpo/logarithm/Log.class
+lab/tpo/func/MainFunction.class
+lab/tpo/FuncInterface.class
 lab/tpo/func/TrigonometryFunc.class
 lab/tpo/func/LogarithmFunc.class
-lab/tpo/func/MainFunction.class
-lab/tpo/func/FuncInterface.class
+lab/tpo/logarithm/Ln.class
+lab/tpo/trigonometry/Cos.class
+lab/tpo/Main.class
+lab/tpo/trigonometry/Tan.class
+lab/tpo/trigonometry/Cot.class
+lab/tpo/trigonometry/Csc.class
