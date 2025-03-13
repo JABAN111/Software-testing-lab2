@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import lab.tpo.export.CsvExporter;
 import lab.tpo.logarithm.Ln;
 
 public class LnTest {
@@ -13,7 +14,7 @@ public class LnTest {
     double eps = 1e-8;
     double accuracy = 1e-10;
     private final Ln ln = new Ln();
-
+    private final CsvExporter csvExporter = new CsvExporter(ln::apply);
 
     @Test
     public void testAndSaveLnResults() {
@@ -22,8 +23,8 @@ public class LnTest {
             double actual = ln.apply(x, accuracy);
 
             assertEquals(expected, actual, eps);
-
         }
+        csvExporter.testAndExportCsv(0.1, 10.0, 0.1, "ln_result.csv", eps);
     }
 
 

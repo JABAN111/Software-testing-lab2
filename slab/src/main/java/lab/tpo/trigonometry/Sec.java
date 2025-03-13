@@ -2,12 +2,21 @@ package lab.tpo.trigonometry;
 
 import lab.tpo.FuncInterface;
 
-public class Sec implements FuncInterface{
+public class Sec implements FuncInterface {
+
+    private final Cos cos;
+
+    public Sec(final Cos cos) {
+        this.cos = cos;
+    }
 
     @Override
     public double apply(double x, double accuracy) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'apply'");
+        var cosx = cos.apply(x, accuracy);
+        if (cosx == 0) {
+            return Double.NaN;
+        }
+        return 1 / cosx;
     }
-    
+
 }

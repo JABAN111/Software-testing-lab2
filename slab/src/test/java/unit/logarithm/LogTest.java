@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import lab.tpo.export.CsvExporter;
 import lab.tpo.logarithm.*;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,6 +17,9 @@ public class LogTest {
     private static Log log3;
     double eps = 1e-8;
     double accuracy = 1e-10;
+    private final CsvExporter csvLog2Exporter = new CsvExporter(log2::apply);
+    private final CsvExporter csvLog3Exporter = new CsvExporter(log3::apply);
+    private final CsvExporter csvLog10Exporter = new CsvExporter(log10::apply);
 
     @BeforeAll
     public static void initializeLogarithms() {
@@ -41,6 +45,9 @@ public class LogTest {
             assertEquals(expectedLog10, actualLog10, eps);
         }
 
+        csvLog2Exporter.testAndExportCsv(0.1, 10.0, 0.1, "log2_result.csv", eps);
+        csvLog3Exporter.testAndExportCsv(0.1, 10.0, 0.1, "log3_result.csv", eps);
+        csvLog10Exporter.testAndExportCsv(0.1, 10.0, 0.1, "log10_result.csv", eps);
     }
 
     @ParameterizedTest

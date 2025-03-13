@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="unit.logarithm.LogTest" time="0.035" tests="31" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="integration.trigonometry.CscTest" time="0.237" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -56,40 +56,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testBases(int)[1]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testBases(int)[2]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testBases(int)[3]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testBases(int)[4]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog10(double)[1]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog10(double)[2]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog10(double)[3]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog10(double)[4]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog10(double)[5]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog10(double)[6]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[1]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[2]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[3]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[4]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[5]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog2(double)[6]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog2(double)[7]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog2(double)[8]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog3(double)[1]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog3(double)[2]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog3(double)[3]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog3(double)[4]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testLog3(double)[5]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testLog3(double)[6]" classname="unit.logarithm.LogTest" time="0.001"/>
-  <testcase name="testInvalidValues(double)[1]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testInvalidValues(double)[2]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testInvalidValues(double)[3]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testInvalidValues(double)[4]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testInvalidValues(double)[5]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testInvalidValues(double)[6]" classname="unit.logarithm.LogTest" time="0.0"/>
-  <testcase name="testAndSaveLogResults" classname="unit.logarithm.LogTest" time="0.005">
-    <system-out><![CDATA[File created: src/test/resources/log2_result.csv
-File created: src/test/resources/log3_result.csv
-File created: src/test/resources/log10_result.csv
-]]></system-out>
-  </testcase>
+  <testcase name="testCosecMockValues(double)[1]" classname="integration.trigonometry.CscTest" time="0.224"/>
+  <testcase name="testCosecMockValues(double)[2]" classname="integration.trigonometry.CscTest" time="0.002"/>
+  <testcase name="testCosecMockValues(double)[3]" classname="integration.trigonometry.CscTest" time="0.001"/>
+  <testcase name="testCosecMockValues(double)[4]" classname="integration.trigonometry.CscTest" time="0.001"/>
+  <testcase name="testCosecMockValues(double)[5]" classname="integration.trigonometry.CscTest" time="0.002"/>
+  <testcase name="testCosecMockValues(double)[6]" classname="integration.trigonometry.CscTest" time="0.002"/>
+  <testcase name="testCosecMockValues(double)[7]" classname="integration.trigonometry.CscTest" time="0.001"/>
 </testsuite>

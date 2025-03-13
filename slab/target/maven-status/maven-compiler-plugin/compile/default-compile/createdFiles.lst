@@ -8,6 +8,7 @@ lab/tpo/func/LogarithmFunc.class
 lab/tpo/logarithm/Ln.class
 lab/tpo/trigonometry/Cos.class
 lab/tpo/Main.class
+lab/tpo/export/CsvExporter.class
 lab/tpo/trigonometry/Tan.class
 lab/tpo/trigonometry/Cot.class
 lab/tpo/trigonometry/Csc.class
