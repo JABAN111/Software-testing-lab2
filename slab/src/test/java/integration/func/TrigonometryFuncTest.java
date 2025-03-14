@@ -60,9 +60,11 @@ public class TrigonometryFuncTest {
     }
 
     @ParameterizedTest
-    @ValueSource(doubles = {2.0, -1.0, -5.0})
-    public void testTrgFunc(double x){
-        var expected = (pow(secMock.apply(x, accuracy) + tanMock.apply(x, accuracy), 2) * sinMock.apply(x, accuracy)) * (cotMock.apply(x, accuracy) / cscMock.apply(x, accuracy) + secMock.apply(x, accuracy)) * (cscMock.apply(x, accuracy) + cotMock.apply(x, accuracy));
+    @ValueSource(doubles = { 2.0, -1.0, -5.0 })
+    public void testTrgFunc(double x) {
+        var expected = (pow(secMock.apply(x, accuracy) + tanMock.apply(x, accuracy), 2) * sinMock.apply(x, accuracy))
+                * (cotMock.apply(x, accuracy) / cscMock.apply(x, accuracy) + secMock.apply(x, accuracy))
+                * (cscMock.apply(x, accuracy) + cotMock.apply(x, accuracy));
 
         double actual = trigonometricFunc.apply(x, accuracy);
 

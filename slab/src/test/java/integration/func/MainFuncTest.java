@@ -19,9 +19,8 @@ public class MainFuncTest {
     private TrigonometryFunc trigonometricFuncMock;
     private MainFunction mainFunc;
 
-
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         logarithmFuncMock = mock(LogarithmFunc.class);
         trigonometricFuncMock = mock(TrigonometryFunc.class);
 
@@ -30,7 +29,6 @@ public class MainFuncTest {
 
         mainFunc = new MainFunction(logarithmFuncMock, trigonometricFuncMock);
     }
-
 
     @Test
     public void testMainFunction_Logarithmic() {
@@ -45,7 +43,7 @@ public class MainFuncTest {
     }
 
     @Test
-    public void testMainFuncTrigonometry(){
+    public void testMainFuncTrigonometry() {
         var x = -5d;
         var expected = 233.180433776;
         double actual = mainFunc.apply(x, accuracy);

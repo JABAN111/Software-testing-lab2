@@ -12,10 +12,10 @@ public class Csc implements FuncInterface {
     @Override
     public double apply(double x, double accuracy) {
         var sinx = sin.apply(x, accuracy);
-        if(sinx == 0){
+        if (sinx == 0) {
             return Double.NaN;
         }
-        return 1/sinx;
+        return 1 / sinx;
     }
 
 }

@@ -1,6 +1,5 @@
 package unit.function;
 
-
 import org.junit.jupiter.api.Test;
 
 import lab.tpo.export.CsvExporter;
@@ -22,13 +21,12 @@ public class TrigonometryFuncTest {
     private final CsvExporter csvExporter = new CsvExporter(trigonometricFunc::apply);
 
     @Test
-    public void testAndSaveTrigFunc(){
+    public void testAndSaveTrigFunc() {
         csvExporter.testAndExportCsv(-10.0, -0.1, 0.1, "trig_func_result.csv", accuracy);
     }
 
-
     @Test
-    public void testValues(){
+    public void testValues() {
         assertEquals(2.64795248342, trigonometricFunc.apply(-0.2, accuracy), accuracy);
         assertEquals(2.12877144787, trigonometricFunc.apply(-0.3, accuracy), accuracy);
         assertEquals(1.6941368498, trigonometricFunc.apply(-0.4, accuracy), accuracy);
@@ -36,4 +34,3 @@ public class TrigonometryFuncTest {
         assertEquals(1.03456315637, trigonometricFunc.apply(-0.6, accuracy), accuracy);
     }
 }
-

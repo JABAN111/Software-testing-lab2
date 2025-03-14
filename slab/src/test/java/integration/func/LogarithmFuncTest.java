@@ -10,7 +10,6 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import static java.lang.Math.pow;
 
-
 import lab.tpo.func.LogarithmFunc;
 import lab.tpo.logarithm.Ln;
 import lab.tpo.logarithm.Log;
@@ -22,7 +21,6 @@ public class LogarithmFuncTest {
     private Log log2Mock;
     private Log log10Mock;
     private LogarithmFunc logarithmFunction;
-
 
     @BeforeEach
     public void setUp() {
@@ -46,13 +44,13 @@ public class LogarithmFuncTest {
     }
 
     @ParameterizedTest
-    @ValueSource(doubles = {2.0, 3.0, 5.0})
-    public void testLogarithmFunction(double x){
-        double expected = pow(pow(pow(log2Mock.apply(x, accuracy), 3) * lnMock.apply(x, accuracy), 2), 3) * log10Mock.apply(x, accuracy);
+    @ValueSource(doubles = { 2.0, 3.0, 5.0 })
+    public void testLogarithmFunction(double x) {
+        double expected = pow(pow(pow(log2Mock.apply(x, accuracy), 3) * lnMock.apply(x, accuracy), 2), 3)
+                * log10Mock.apply(x, accuracy);
         double actual = logarithmFunction.apply(x, accuracy);
 
         assertEquals(expected, actual, accuracy);
     }
-
 
 }
